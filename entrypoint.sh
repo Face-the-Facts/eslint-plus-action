@@ -29,7 +29,7 @@ pushd /action
 echo "Yarn Action Install"
 
 [ -f yarn.lock ] && NODE_ENV=production yarn install --frozen-lockfile --prefer-offline
-[ -f package-lock.json ] && NODE_ENV=production npm install 
+[ -f package-lock.json ] && npm install 
 popd
 
 
